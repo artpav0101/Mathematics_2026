@@ -1,27 +1,59 @@
-### Exercise 7. Using Properties Instead of Recomputing
+Exercise 12. A Parameter Revealed by a Row Operation
 
-Given a $3\times3$ matrix with $\det A=-4$:
+Given
 
-1. Scaling a $3\times3$ matrix by $2$ scales its determinant by $2^3$:
+$$
+A(t)=
+\begin{pmatrix}
+1 & 2 & 3\
+2 & 4 & t\
+0 & 1 & 1
+\end{pmatrix},
+$$
 
-   $$
-   \det(2A)=2^3\det A=8(-4)=-32.
-   $$
+apply the row operation
 
-2. Transposition preserves the determinant:
+$$
+R_2\leftarrow R_2-2R_1.
+$$
 
-   $$
-   \det(A^T)=\det A=-4.
-   $$
+This operation does not change the determinant. The resulting matrix is
 
-3. The determinant of a product is the product of the determinants:
+$$
+\begin{pmatrix}
+1 & 2 & 3\
+0 & 0 & t-6\
+0 & 1 & 1
+\end{pmatrix}.
+$$
 
-   $$
-   \det(A^2)=\det A\det A=(-4)^2=16.
-   $$
+Expanding along the second row gives
 
-4. For a $3\times3$ matrix, multiplying the matrix by $-1$ multiplies the determinant by $(-1)^3$:
+$$
+\begin{aligned}
+\det A(t)
+&=-(t-6)
+\begin{vmatrix}
+1 & 2\
+0 & 1
+\end{vmatrix}\
+&=-(t-6)(1\cdot1-2\cdot0)\
+&=6-t.
+\end{aligned}
+$$
 
-   $$
-   \det(-A)=(-1)^3\det A=(-1)(-4)=4.
-   $$
+The matrix is not invertible when its determinant is zero:
+
+$$
+6-t=0
+\quad\Longrightarrow\quad
+\boxed{t=6}.
+$$
+
+For $t=6$, the second row of the original matrix is twice the first row:
+
+$$
+(2,4,6)=2(1,2,3).
+$$
+
+Therefore, the rows are linearly dependent, confirming that the determinant is zero.
