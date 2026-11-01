@@ -1,205 +1,157 @@
-# Exercise 12. Formula for a Matrix Power
+Exercise 12. Formula for a Matrix Power
 
-## Given
+Given
 
-$$
-A = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
+A=\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
 
-Compute $A^2$, $A^3$, and $A^4$, and use them to formulate a conjecture for $A^n$. Then prove the formula using mathematical induction.
+Compute $A^2$, $A^3$, and $A^4$, formulate a conjecture for $A^n$, and prove the formula using mathematical induction.
 
-## Solution
+Main steps
 
-### 1. Calculate $A^2$
+1. Calculate $A^2$.
 
 By definition:
 
-$$
-A^2 = A \cdot A
-$$
+A^2=A\cdot A
+A^2=
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+=
+\begin{pmatrix}1 & 2\\0 & 1\end{pmatrix}.
 
-$$
-A^2 =
-\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
+2. Calculate $A^3$.
 
-Multiplying the matrices:
+A^3=A^2\cdot A
+A^3=
+\begin{pmatrix}1 & 2\\0 & 1\end{pmatrix}
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+=
+\begin{pmatrix}1 & 3\\0 & 1\end{pmatrix}.
 
-$$
-A^2 = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}
-$$
+3. Calculate $A^4$.
 
-### 2. Calculate $A^3$
+A^4=A^3\cdot A
+A^4=
+\begin{pmatrix}1 & 3\\0 & 1\end{pmatrix}
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+=
+\begin{pmatrix}1 & 4\\0 & 1\end{pmatrix}.
 
-$$
-A^3 = A^2 \cdot A
-$$
-
-$$
-A^3 =
-\begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}
-\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
-
-Multiplying:
-
-$$
-A^3 = \begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix}
-$$
-
-### 3. Calculate $A^4$
-
-$$
-A^4 = A^3 \cdot A
-$$
-
-$$
-A^4 =
-\begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix}
-\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
-
-Multiplying:
-
-$$
-A^4 = \begin{pmatrix} 1 & 4 \\ 0 & 1 \end{pmatrix}
-$$
-
-### 4. Formulate a Conjecture
+4. Formulate a conjecture.
 
 Looking at the first four powers:
 
-$$
-A^1 = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
+A^1=\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix},
+\quad
+A^2=\begin{pmatrix}1 & 2\\0 & 1\end{pmatrix},
+A^3=\begin{pmatrix}1 & 3\\0 & 1\end{pmatrix},
+\quad
+A^4=\begin{pmatrix}1 & 4\\0 & 1\end{pmatrix}.
 
-$$
-A^2 = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix}
-$$
+We observe the following pattern:
 
-$$
-A^3 = \begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix}
-$$
-
-$$
-A^4 = \begin{pmatrix} 1 & 4 \\ 0 & 1 \end{pmatrix}
-$$
-
-We observe that:
-
-- The diagonal entries always remain equal to $1$.
-- The lower-left entry always remains $0$.
-- The upper-right entry increases by $1$ with each multiplication.
+* The diagonal entries always remain equal to $1$.
+* The lower-left entry always remains equal to $0$.
+* The upper-right entry increases by $1$ with each multiplication.
 
 Therefore, we conjecture that:
 
-$$
-A^n = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}
-$$
+\boxed{A^n=\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}}
 
 for every positive integer $n$.
 
-### 5. Proof by Mathematical Induction
+Proof by mathematical induction
 
-We will prove that:
+We will prove that the conjectured formula holds for every positive integer $n$.
 
-$$
-A^n = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}
-$$
+1. Base case: $n=1$.
 
-for every positive integer $n$.
+For $n=1$, the formula gives:
 
-**Base Case: $n = 1$**
+A^1=\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}.
 
-For $n = 1$:
+This is exactly the original matrix $A$. Therefore, the formula holds for $n=1$.
 
-$$
-A^1 = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
+2. Inductive hypothesis.
 
-This is exactly the original matrix $A$.
+Assume that the formula is true for some positive integer $n$:
 
-Therefore, the formula holds for $n = 1$.
+A^n=\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}.
 
-**Inductive Hypothesis**
+3. Inductive step: prove the formula for $n+1$.
 
-Assume that the formula holds for some positive integer $n$:
+We need to show that:
 
-$$
-A^n = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}
-$$
-
-**Inductive Step**
-
-We need to prove that the formula also holds for $n+1$.
+A^{n+1}=\begin{pmatrix}1 & n+1\\0 & 1\end{pmatrix}.
 
 By the definition of matrix powers:
 
-$$
-A^{n+1} = A^n \cdot A
-$$
+A^{n+1}=A^n\cdot A.
 
 Substituting the inductive hypothesis:
 
-$$
-A^{n+1} =
-\begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}
-\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}
-$$
+A^{n+1}=
+\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}.
 
 Multiplying the matrices:
 
-$$
-A^{n+1} =
+A^{n+1}=
 \begin{pmatrix}
-1 \cdot 1 + n \cdot 0 & 1 \cdot 1 + n \cdot 1 \\
-0 \cdot 1 + 1 \cdot 0 & 0 \cdot 1 + 1 \cdot 1
-\end{pmatrix}
-$$
+1\cdot1+n\cdot0 & 1\cdot1+n\cdot1\\
+0\cdot1+1\cdot0 & 0\cdot1+1\cdot1
+\end{pmatrix}.
 
 Simplifying:
 
-$$
-A^{n+1} = \begin{pmatrix} 1 & n+1 \\ 0 & 1 \end{pmatrix}
-$$
+A^{n+1}=
+\begin{pmatrix}1 & n+1\\0 & 1\end{pmatrix}.
 
 This is exactly the proposed formula with $n$ replaced by $n+1$.
 
-Therefore, the formula holds for $n+1$ whenever it holds for $n$.
+Therefore, if the formula holds for $n$, it also holds for $n+1$.
 
-**Conclusion**
+4. Conclusion.
 
-Since the formula holds for the base case and the inductive step is valid, by mathematical induction:
+Since the formula holds for the base case $n=1$ and the inductive step is valid, by mathematical induction:
 
-$$
-\boxed{A^n = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}}
-$$
+\boxed{A^n=\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}}
 
 for every positive integer $n$.
 
-## Final Answer
+Result
 
 The first three calculated powers are:
 
-$$
-A^2 = \begin{pmatrix} 1 & 2 \\ 0 & 1 \end{pmatrix},
+A^2=\begin{pmatrix}1 & 2\\0 & 1\end{pmatrix},
 \quad
-A^3 = \begin{pmatrix} 1 & 3 \\ 0 & 1 \end{pmatrix},
+A^3=\begin{pmatrix}1 & 3\\0 & 1\end{pmatrix},
 \quad
-A^4 = \begin{pmatrix} 1 & 4 \\ 0 & 1 \end{pmatrix}
-$$
+A^4=\begin{pmatrix}1 & 4\\0 & 1\end{pmatrix}.
 
 The general formula is:
 
-$$
-\boxed{A^n = \begin{pmatrix} 1 & n \\ 0 & 1 \end{pmatrix}}
-$$
+\boxed{A^n=\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}},
+\qquad n\geq1.
 
-where $n$ is any positive integer.
+Property / method
 
-## Key Insight
+Mathematical induction is a proof technique consisting of two essential steps:
 
-Each multiplication by $A$ increases the upper-right entry by exactly $1$, while the other three entries remain unchanged.
+* Base case: Verify that the statement is true for the first value, usually $n=1$.
+* Inductive step: Assume the statement is true for $n$ and prove that it must also be true for $n+1$.
 
-Mathematical induction allows us to prove that this pattern holds for every positive integer, rather than just the first few powers.
+If both steps are established, the statement holds for all positive integers.
+
+Verification
+
+The inductive step confirms the pattern:
+
+\begin{pmatrix}1 & n\\0 & 1\end{pmatrix}
+\begin{pmatrix}1 & 1\\0 & 1\end{pmatrix}
+=
+\begin{pmatrix}1 & n+1\\0 & 1\end{pmatrix}.
+
+Each multiplication increases the upper-right entry by exactly $1$, while the other three entries remain unchanged.
+
+This proves that the conjectured formula works for every positive integer, not just the first few powers.
