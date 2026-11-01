@@ -1,44 +1,164 @@
-### Solution: Exercise 11. When Do Matrices Commute?
+# Exercise 11. When Do Matrices Commute?
 
-To find the conditions under which the matrices commute, we must calculate both $AB$ and $BA$, set them equal to each other, and solve for $a$, $b$, $c$, and $d$.
-
-**1. Calculate $AB$:**
+## Given
 
 $$
-AB = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} \begin{pmatrix} a & b \\ c & d \end{pmatrix} = \begin{pmatrix} 1\cdot a + 1\cdot c & 1\cdot b + 1\cdot d \\ 0\cdot a + 1\cdot c & 0\cdot b + 1\cdot d \end{pmatrix} = \begin{pmatrix} a+c & b+d \\ c & d \end{pmatrix}
+A = \begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix},
+\qquad
+B = \begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}.
 $$
 
-**2. Calculate $BA$:**
+Find the conditions on $a,b,c,d$ under which $AB = BA$. Describe the general form of all such matrices $B$.
+
+## Solution
+
+To determine when the matrices commute, we calculate both products $AB$ and $BA$, then set them equal.
+
+### 1. Calculate $AB$
 
 $$
-BA = \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix} = \begin{pmatrix} a\cdot 1 + b\cdot 0 & a\cdot 1 + b\cdot 1 \\ c\cdot 1 + d\cdot 0 & c\cdot 1 + d\cdot 1 \end{pmatrix} = \begin{pmatrix} a & a+b \\ c & c+d \end{pmatrix}
+AB =
+\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
 $$
 
-**3. Equate $AB$ and $BA$:**
-
-For $AB = BA$, their corresponding matrix entries must be identical:
+Multiplying the matrices:
 
 $$
-\begin{pmatrix} a+c & b+d \\ c & d \end{pmatrix} = \begin{pmatrix} a & a+b \\ c & c+d \end{pmatrix}
+AB =
+\begin{pmatrix}
+a+c & b+d \\
+c & d
+\end{pmatrix}.
 $$
 
-This yields the following system of linear equations:
+### 2. Calculate $BA$
 
 $$
-\begin{aligned}
-a + c &= a \implies c = 0 \\
-b + d &= a + b \implies d = a \\
-c &= c \\
-d &= c + d \implies c = 0
-\end{aligned}
+BA =
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\begin{pmatrix}
+1 & 1 \\
+0 & 1
+\end{pmatrix}
 $$
 
-**4. Conditions and General Form:**
-
-The equations dictate that $c = 0$ and $a = d$. There are no restrictions on $b$, meaning it can be any scalar. 
-
-Therefore, the general form of all such matrices $B$ that commute with $A$ is:
+Multiplying the matrices:
 
 $$
-B = \begin{pmatrix} a & b \\ 0 & a \end{pmatrix}
+BA =
+\begin{pmatrix}
+a & a+b \\
+c & c+d
+\end{pmatrix}.
 $$
+
+### 3. Set $AB = BA$
+
+Equating the two products:
+
+$$
+\begin{pmatrix}
+a+c & b+d \\
+c & d
+\end{pmatrix}
+=
+\begin{pmatrix}
+a & a+b \\
+c & c+d
+\end{pmatrix}.
+$$
+
+Comparing corresponding entries gives:
+
+$$
+\begin{cases}
+a+c = a, \\
+b+d = a+b, \\
+c = c, \\
+d = c+d.
+\end{cases}
+$$
+
+Simplifying the equations:
+
+$$
+\begin{cases}
+c = 0, \\
+d = a.
+\end{cases}
+$$
+
+Therefore, the necessary and sufficient conditions are:
+
+$$
+\boxed{c=0,\qquad d=a}.
+$$
+
+### 4. General Form of Matrix $B$
+
+Substituting these conditions into the original matrix:
+
+$$
+B =
+\begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix}.
+$$
+
+Thus, all matrices that commute with $A$ have the following general form:
+
+$$
+\boxed{
+B =
+\begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix},
+\qquad a,b \in \mathbb{R}.
+}
+$$
+
+## Final Answer
+
+The matrices $A$ and $B$ commute if and only if:
+
+$$
+\boxed{c=0,\qquad d=a}.
+$$
+
+The general form of all such matrices is:
+
+$$
+\boxed{
+B =
+\begin{pmatrix}
+a & b \\
+0 & a
+\end{pmatrix}.
+}
+$$
+
+## Key Insight
+
+Matrix multiplication is generally **not commutative**, meaning that $AB \neq BA$.
+
+However, certain matrices do commute. In this exercise, matrix $B$ must have equal diagonal entries and a zero lower-left entry.
+
+The values of $a$ and $b$ can be arbitrary, meaning there are infinitely many matrices that commute with $A$.
