@@ -1,6 +1,25 @@
-## Exercise 11. When Do Matrices Commute?
+## Question 
 
-### Result
+### Exercise 11. When Do Matrices Commute?
+Given
+
+$$
+A=
+\begin{pmatrix}
+1 & 1 \\
+0 & 1 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+a & b \\
+c & d \\
+\end{pmatrix}.
+$$
+
+Find the conditions on $a,b,c,d$ under which $AB=BA$. Describe the general form of all such matrices $B$.
+
+> **Why this exercise:** deepens the idea of noncommutativity by finding the conditions under which commutativity does hold.
+
+## Solution
 
 For
 
