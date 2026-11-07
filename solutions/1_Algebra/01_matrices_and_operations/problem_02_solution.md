@@ -1,11 +1,29 @@
 ## Question 
 
-### Exercise 2. Addition and Scalar Multiplication
- 
-```math
-A=\begin{pmatrix}1 & 2\\-1 & 3\end{pmatrix},\qquad
-B=\begin{pmatrix}4 & -2\\0 & 5\end{pmatrix}
-```
+## Exercise 2. Addition and Scalar Multiplication
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+-1 & 3 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+4 & -2 \\
+0 & 5 \\
+\end{pmatrix}
+$$
+
+compute
+
+$$
+A+B,\qquad A-B,\qquad 3A-2B.
+$$
+
+Explain why matrix addition is possible only for matrices of the same size.
+
+> **Why this exercise:** reinforces entry-by-entry operations and the importance of compatible dimensions.
  
 ## Solution
  
