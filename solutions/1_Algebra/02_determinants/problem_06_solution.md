@@ -1,6 +1,32 @@
-## Exercise 6. Parameter and Invertibility
+## Question
 
-### Result
+### Exercise 6. Parameter and Invertibility
+For
+
+$$
+A(t)=
+\begin{pmatrix}
+t & 1 \\
+2 & t \\
+\end{pmatrix}
+$$
+
+find all values of $t$ for which the matrix is not invertible. Explain how your answer is related to the determinant being zero.
+
+> **Why this exercise:** shows how the determinant can be used to study a family of matrices depending on a parameter.
+
+### Exercise 7. Using Properties Instead of Recomputing
+Suppose that for a $3\times3$ matrix, $\det A=-4$. Compute
+
+$$
+\det(2A),\qquad \det(A^T),\qquad \det(A^2),\qquad \det(-A).
+$$
+
+Justify each answer using the appropriate property.
+
+> **Why this exercise:** teaches how to use determinant properties instead of repeating a full calculation.
+
+## Solution
 
 For
 
