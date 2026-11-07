@@ -1,6 +1,24 @@
-## Exercise 3. Swapping Two Rows
+## Question
 
-### Result
+### Exercise 3. Swapping Two Rows
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 0 \\
+0 & 3 & 1 \\
+2 & 1 & 1 \\
+\end{pmatrix}
+$$
+
+compute $\det A$. Then form a matrix $B$ by swapping the first and second rows of $A$.
+
+First predict $\det B$ using a determinant property, and then verify your prediction by calculation.
+
+> **Why this exercise:** gives a second classical calculation with a $3\times3$ determinant while teaching the precise effect of a row swap on the sign of the determinant.
+
+## Solution
 
 For
 
