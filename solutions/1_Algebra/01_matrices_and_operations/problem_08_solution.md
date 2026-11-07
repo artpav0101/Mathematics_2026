@@ -1,10 +1,28 @@
-## Exercise 8. Row Operations and Their Reversibility
+## Question 
 
-```math
-A=\begin{pmatrix}1 & 2 & -1\\2 & 4 & 1\\-1 & 1 & 3\end{pmatrix}
-```
+### Exercise 8. Row Operations and Their Reversibility
+For
 
-### Result
+$$
+A=
+\begin{pmatrix}
+1 & 2 & -1 \\
+2 & 4 & 1 \\
+-1 & 1 & 3 \\
+\end{pmatrix}
+$$
+
+perform, in order:
+
+1. $R_2\leftarrow R_2-2R_1$,
+2. $R_3\leftarrow R_3+R_1$,
+3. interchange $R_2$ and $R_3$.
+
+Write the matrix after each step. Then, for each of the three operations, state an operation that reverses it.
+
+> **Why this exercise:** prepares for elimination by showing that row operations are controlled and reversible transformations of a matrix
+
+### Solution 
 
 After the three operations:
 
