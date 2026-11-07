@@ -1,6 +1,23 @@
-## Exercise 15. Combining Determinant Properties
+## Question
 
-### Result
+### Exercise 15. Combining Determinant Properties
+Let $A$ and $B$ be invertible $2\times2$ matrices with
+
+$$
+\det A=-2,\qquad \det B=3.
+$$
+
+Without finding the entries of the matrices, compute
+
+$$
+\det\left(B^{-1}A^TB\right).
+$$
+
+State the determinant properties you use in order and explain why the factors involving $B$ eventually cancel.
+
+> **Why this exercise:** tests the transfer of several known properties into one short problem instead of checking a single property again with numbers.
+
+## Solution
 
 For invertible $2\times2$ matrices $A$ and $B$ with $\det A=-2$ and $\det B=3$:
 
