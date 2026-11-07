@@ -22,7 +22,7 @@ Write the matrix after each step. Then, for each of the three operations, state 
 
 > **Why this exercise:** prepares for elimination by showing that row operations are controlled and reversible transformations of a matrix
 
-### Solution 
+## Solution 
 
 After the three operations:
 
