@@ -1,11 +1,25 @@
-## Exercise 4. Matrix Multiplication and Noncommutativity
+## Question
 
-```math
-A=\begin{pmatrix}1 & 2\\0 & 1\end{pmatrix},\qquad
-B=\begin{pmatrix}2 & 0\\3 & 1\end{pmatrix}
-```
+### Exercise 4. Matrix Multiplication and Noncommutativity
+For
 
-### Result
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+0 & 1 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+2 & 0 \\
+3 & 1 \\
+\end{pmatrix}
+$$
+
+compute $AB$ and $BA$. Is $AB=BA$? Use this example to explain what noncommutativity of matrix multiplication means.
+
+> **Why this exercise:** shows one of the most important differences between matrix multiplication and multiplication of numbers.
+
+### Solution
 
 ```math
 AB=\begin{pmatrix}8 & 2\\3 & 1\end{pmatrix},\qquad
