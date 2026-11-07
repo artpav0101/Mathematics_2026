@@ -1,6 +1,22 @@
-## Exercise 10. Detecting Dependence
+## Question
 
-### Result
+### Exercise 10. Detecting Dependence
+Without carrying out a full determinant calculation, explain why
+
+$$
+\det
+\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 4 & 6 \\
+0 & 1 & 5 \\
+\end{pmatrix}=0.
+$$
+
+Identify a specific dependence between the rows and connect it with noninvertibility of the matrix.
+
+> **Why this exercise:** teaches how to recognize a zero determinant from the structure of a matrix.
+
+## Solution
 
 The determinant
 
