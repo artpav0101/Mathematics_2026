@@ -1,6 +1,22 @@
-## Exercise 2. Determinant of a 3×3 Matrix
+## Question
 
-### Result
+### Exercise 2. Determinant of a 3×3 Matrix
+For
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & -1 \\
+0 & 3 & 4 \\
+2 & 1 & 5 \\
+\end{pmatrix}
+$$
+
+compute $\det A$ using Sarrus' rule. Then perform one simple check using a chosen property of the determinant.
+
+> **Why this exercise:** teaches a basic method for $3\times3$ matrices and builds the habit of checking the result without adding a second full solution.
+
+## Solution
 
 For
 
