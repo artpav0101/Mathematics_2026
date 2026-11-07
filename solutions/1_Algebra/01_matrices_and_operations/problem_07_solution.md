@@ -1,10 +1,27 @@
-## Exercise 7. Identity Matrix, Zero Matrix, and Powers
+## Question 
 
-```math
-A=\begin{pmatrix}2 & 1\\0 & 2\end{pmatrix}
-```
+### Exercise 7. Identity Matrix, Zero Matrix, and Powers
+For
 
-### Result
+$$
+A=
+\begin{pmatrix}
+2 & 1 \\
+0 & 2 \\
+\end{pmatrix}
+$$
+
+compute
+
+$$
+AI,\qquad IA,\qquad A+0,\qquad A^2,\qquad A^3.
+$$
+
+Explain the roles of the matrices $I$ and $0$, and describe the pattern you observe in successive powers of $A$.
+
+> **Why this exercise:** organizes the roles of neutral elements and reveals regularity in successive powers of a matrix.
+
+### Solution
 
 ```math
 AI=IA=A,\qquad A+0=A,\qquad
