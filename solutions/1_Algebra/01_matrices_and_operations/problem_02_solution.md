@@ -1,11 +1,13 @@
-## Exercise 2. Addition and Scalar Multiplication
+## Question 
+
+### Exercise 2. Addition and Scalar Multiplication
  
 ```math
 A=\begin{pmatrix}1 & 2\\-1 & 3\end{pmatrix},\qquad
 B=\begin{pmatrix}4 & -2\\0 & 5\end{pmatrix}
 ```
  
-### Result
+## Solution
  
 ```math
 A+B=\begin{pmatrix}5 & 0\\-1 & 8\end{pmatrix},\qquad
