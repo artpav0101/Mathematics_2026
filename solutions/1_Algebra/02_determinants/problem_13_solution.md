@@ -1,6 +1,22 @@
-## Exercise 13. Determinant by Elimination
+## Question
 
-### Result
+### Exercise 13. Determinant by Elimination
+Compute the determinant
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 & 3 \\
+2 & 5 & 7 \\
+1 & 0 & 2 \\
+\end{pmatrix}
+$$
+
+using elimination. Record the effect of every row operation used on the value of the determinant.
+
+> **Why this exercise:** reinforces organizing a determinant calculation through row operations without introducing an unnecessary second procedure.
+
+## Solution
 
 For
 
