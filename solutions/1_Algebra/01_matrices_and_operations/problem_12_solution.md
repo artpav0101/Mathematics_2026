@@ -1,6 +1,21 @@
-## Exercise 12. Formula for a Matrix Power
+## Question 
 
-### Result
+### Exercise 12. Formula for a Matrix Power
+Let
+
+$$
+A=
+\begin{pmatrix}
+1 & 1 \\
+0 & 1 \\
+\end{pmatrix}.
+$$
+
+Compute $A^2$, $A^3$, and $A^4$, and use them to formulate a conjecture for $A^n$. Then do not stop after checking one more case: assume the formula is true for $n$, multiply by $A$, and explain why you obtain exactly the formula for $n+1$.
+
+> **Why this exercise:** teaches how to recognize a pattern and formulate a generalization from several computations.
+
+## Solution
 
 For
 
