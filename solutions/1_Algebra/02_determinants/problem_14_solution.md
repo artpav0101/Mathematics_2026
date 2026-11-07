@@ -1,6 +1,22 @@
-## Exercise 14. A System of Equations and the Determinant
+## Question 
 
-### Result
+### Exercise 14. A System of Equations and the Determinant
+Consider the system $Ax=b$, where
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+k & 4 \\
+\end{pmatrix}.
+$$
+
+For which values of $k$ does the system have exactly one solution for every $b$? For the remaining value, give an example of a right-hand side $b$ for which the system has infinitely many solutions, and an example for which it has no solution.
+
+> **Why this exercise:** connects the determinant with uniqueness of solutions and requires distinguishing the exceptional cases.
+
+
+## Solution
 
 For $Ax=b$ with
 
