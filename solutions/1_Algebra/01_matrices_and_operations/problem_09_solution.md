@@ -1,12 +1,36 @@
-## Exercise 9. Composing Transformations
+## Question 
 
-```math
-S=\begin{pmatrix}2 & 0\\0 & 1\end{pmatrix},\qquad
-R=\begin{pmatrix}0 & -1\\1 & 0\end{pmatrix},\qquad
-x=\begin{pmatrix}1\\2\end{pmatrix}
-```
+### Exercise 9. Composing Transformations
+Let
 
-### Result
+$$
+S=
+\begin{pmatrix}
+2 & 0 \\
+0 & 1 \\
+\end{pmatrix},\qquad R=
+\begin{pmatrix}
+0 & -1 \\
+1 & 0 \\
+\end{pmatrix}.
+$$
+
+The matrix $S$ describes nonuniform scaling, while $R$ describes a $90^\circ$ counterclockwise rotation.
+For
+
+$$
+x=
+\begin{pmatrix}
+1 \\
+2 \\
+\end{pmatrix}
+$$
+
+compute $RSx$ and $SRx$. Compare the results and explain geometrically why the order of these transformations matters.
+
+> **Why this exercise:** interprets matrix multiplication as composition of transformations.
+
+## Solution
 
 ```math
 RSx=\begin{pmatrix}-2\\2\end{pmatrix},\qquad
