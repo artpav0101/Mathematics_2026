@@ -1,6 +1,25 @@
-## Exercise 9. Area and the Determinant
+## Question 
 
-### Result
+### Exercise 9. Area and the Determinant
+The vectors
+
+$$
+u=
+\begin{pmatrix}
+3 \\
+1 \\
+\end{pmatrix},\qquad v=
+\begin{pmatrix}
+1 \\
+4 \\
+\end{pmatrix}
+$$
+
+span a parallelogram. Compute its area using a determinant. Then reverse the order of the vectors and explain what changes in the determinant and what does not change in the area.
+
+> **Why this exercise:** gives the determinant a geometric interpretation and distinguishes its sign from the value of the area.
+
+## Solution
 
 The parallelogram spanned by
 
