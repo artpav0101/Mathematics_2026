@@ -1,6 +1,22 @@
-## Exercise 11. Shortening the Calculation with Row Operations
+## Question 
 
-### Result
+### Exercise 11. Shortening the Calculation with Row Operations
+Compute
+
+$$
+\det
+\begin{pmatrix}
+1 & 2 & 3 \\
+1 & 3 & 4 \\
+1 & 4 & 6 \\
+\end{pmatrix}
+$$
+
+by first performing row operations that create as many zeros as possible. State which operations do not change the determinant.
+
+> **Why this exercise:** develops planning instead of mechanically repeating the same procedure.
+
+## Solution
 
 $$
 \det
