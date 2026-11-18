@@ -1,6 +1,25 @@
-## Exercise 9. Matrix Equation
+## Question
 
-### Result
+### Exercise 9. Matrix Equation
+Given
+
+$$
+A=
+\begin{pmatrix}
+1 & 2 \\
+0 & 1 \\
+\end{pmatrix},\qquad B=
+\begin{pmatrix}
+3 & 1 \\
+2 & 4 \\
+\end{pmatrix}.
+$$
+
+Solve the equation $AX=B$ for $X$. Before calculating, decide on which side of the equation $A^{-1}$ must be used. Then check the result by computing $AX$.
+
+> **Why this exercise:** teaches that order matters in matrix equations and must guide the solution.
+
+## Solution
 
 For
 
