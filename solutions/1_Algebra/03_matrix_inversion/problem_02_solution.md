@@ -1,6 +1,21 @@
-## Exercise 2. Formula for a 2×2 Matrix
+## Question
 
-### Result
+### Exercise 2. Formula for a 2×2 Matrix
+Find the inverse of
+
+$$
+A=
+\begin{pmatrix}
+3 & 2 \\
+5 & 4 \\
+\end{pmatrix}
+$$
+
+using the formula for a $2\times2$ matrix. At the end, check the result by computing one product with $A$.
+
+> **Why this exercise:** teaches the simplest explicit formula for an inverse and requires verification using the definition.
+
+## Solution
 
 For
 
