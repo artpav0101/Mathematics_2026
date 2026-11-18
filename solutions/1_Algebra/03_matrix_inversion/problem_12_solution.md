@@ -1,6 +1,21 @@
-## Exercise 12. Finding Inverses Without Starting from Scratch
+## Question
 
-### Result
+### Exercise 12. Finding Inverses Without Starting from Scratch
+It is known that
+
+$$
+A^{-1}=
+\begin{pmatrix}
+2 & -1 \\
+-3 & 2 \\
+\end{pmatrix}.
+$$
+
+Without finding $A$, compute $(3A)^{-1}$, $(A^T)^{-1}$, and $(A^2)^{-1}$. Justify each result using the appropriate property.
+
+> **Why this exercise:** teaches how to use inverse properties instead of carrying out unnecessary full calculations.
+
+## Solution
 
 Given
 
