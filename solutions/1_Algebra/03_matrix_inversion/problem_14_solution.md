@@ -1,6 +1,24 @@
-## Exercise 14. A Matrix That Is Its Own Inverse
+## Question
 
-### Result
+### Exercise 14. A Matrix That Is Its Own Inverse
+Assume that a square matrix $A$ satisfies
+
+$$
+A^2=I.
+$$
+
+Show that
+
+$$
+A^{-1}=A.
+$$
+
+Then give an example of a $2\times2$ matrix different from $I$ and $-I$ that satisfies this condition, and verify it by multiplication.
+
+> **Why this exercise:** requires using the definition of the inverse in a short argument and constructing an example independently, without introducing a new topic.
+
+
+## Solution
 
 If a square matrix $A$ satisfies $A^2=I$, then $A^{-1}=A$.
 
