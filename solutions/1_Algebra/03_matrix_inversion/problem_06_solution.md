@@ -1,6 +1,31 @@
-## Exercise 6. Solving a System Using the Inverse
+## Question 
 
-### Result
+### Exercise 6. Solving a System Using the Inverse
+Solve
+
+$$
+Ax=b,
+$$
+
+where
+
+$$
+A=
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix},\qquad b=
+\begin{pmatrix}
+5 \\
+7 \\
+\end{pmatrix},
+$$
+
+using $x=A^{-1}b$. Then substitute the resulting vector back into the equation and check the result.
+
+> **Why this exercise:** shows the connection between inverse matrices and solving a linear system.
+
+## Solution
 
 For
 
