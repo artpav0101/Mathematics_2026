@@ -1,6 +1,21 @@
-## Exercise 11. Parameter and Invertibility
+## Question
 
-### Result
+### Exercise 11. Parameter and Invertibility
+For
+
+$$
+A(t)=
+\begin{pmatrix}
+1 & t \\
+t & 1 \\
+\end{pmatrix}
+$$
+
+find all $t$ for which the matrix is invertible, and then give a formula for $A(t)^{-1}$. Explain what happens to this formula at the excluded values.
+
+> **Why this exercise:** combines a parameter, determinant, and an explicit inverse formula in one problem.
+
+## Solution
 
 For
 
