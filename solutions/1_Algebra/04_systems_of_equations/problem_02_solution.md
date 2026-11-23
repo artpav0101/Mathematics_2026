@@ -1,93 +1,80 @@
-### Exercise 2. Gaussian Elimination — One Solution
-
-**Problem.** Solve using Gaussian elimination:
-
-$$
+# Exercise 2. Gaussian Elimination — One Solution
+ 
+## Question
+ 
+Solve using Gaussian elimination:
+ 
+```math
 \begin{cases}
 x+y+z=6, \\
 2x-y+z=3, \\
 x+2y-z=2.
 \end{cases}
-$$
-
+```
+ 
 After solving, substitute the result into all equations and check consistency.
-
-**Solution**
-
-**Augmented matrix**
-
-$$
-\begin{pmatrix}
-1 & 1 & 1 & \mid & 6 \\
-2 & -1 & 1 & \mid & 3 \\
-1 & 2 & -1 & \mid & 2 \\
-\end{pmatrix}
-$$
-
-**Step 1.** Eliminate $x$ from rows 2 and 3 using $R_2-2R_1$ and $R_3-R_1$.
-
-$$
-\begin{pmatrix}
-1 & 1 & 1 & \mid & 6 \\
-0 & -3 & -1 & \mid & -9 \\
-0 & 1 & -2 & \mid & -4 \\
-\end{pmatrix}
-$$
-
-**Step 2.** Swap rows 2 and 3 to obtain a convenient pivot.
-
-$$
-\begin{pmatrix}
-1 & 1 & 1 & \mid & 6 \\
-0 & 1 & -2 & \mid & -4 \\
-0 & -3 & -1 & \mid & -9 \\
-\end{pmatrix}
-$$
-
-**Step 3.** Eliminate $y$ from row 3 using $R_3+3R_2$.
-
-$$
-\begin{pmatrix}
-1 & 1 & 1 & \mid & 6 \\
-0 & 1 & -2 & \mid & -4 \\
-0 & 0 & -7 & \mid & -21 \\
-\end{pmatrix}
-$$
-
-**Back substitution**
-
-From the third row:
-
-$$
--7z=-21 \quad\Rightarrow\quad z=3
-$$
-
-From the second row:
-
-$$
-y-2z=-4 \quad\Rightarrow\quad y=-4+6=2
-$$
-
-From the first row:
-
-$$
-x+y+z=6 \quad\Rightarrow\quad x=6-2-3=1
-$$
-
-**Answer**
-
-$$
-(x,y,z)=(1,2,3)
-$$
-
-**Check in all equations**
-
-$$
-\begin{aligned}
-x+y+z &= 1+2+3 = 6 \\
-2x-y+z &= 2-2+3 = 3 \\
-x+2y-z &= 1+4-3 = 2 \\
-\end{aligned}
-$$
-
-All three equations are satisfied, so the system is consistent and has the unique solution $(1,2,3)$.
+ 
+> **Why this exercise:** introduces the basic method for solving a system and builds the habit of checking the result.
+ 
+## Solution
+ 
+Augmented matrix:
+ 
+```math
+\left(\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+2 & -1 & 1 & 3 \\
+1 & 2 & -1 & 2
+\end{array}\right)
+```
+ 
+**Step 1** — eliminate $x$ below the first pivot: $R_2 - 2R_1 \to R_2$, $R_3 - R_1 \to R_3$:
+ 
+```math
+\left(\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & -3 & -1 & -9 \\
+0 & 1 & -2 & -4
+\end{array}\right)
+```
+ 
+**Step 2** — swap $R_2 \leftrightarrow R_3$ (to get pivot $1$):
+ 
+```math
+\left(\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+0 & -3 & -1 & -9
+\end{array}\right)
+```
+ 
+**Step 3** — $R_3 + 3R_2 \to R_3$:
+ 
+```math
+\left(\begin{array}{ccc|c}
+1 & 1 & 1 & 6 \\
+0 & 1 & -2 & -4 \\
+0 & 0 & -7 & -21
+\end{array}\right)
+```
+ 
+**Back substitution:**
+ 
+- $-7z = -21 \Rightarrow z = 3$,
+- $y - 2z = -4 \Rightarrow y = -4 + 6 = 2$,
+- $x + y + z = 6 \Rightarrow x = 6 - 2 - 3 = 1$.
+```math
+\boxed{(x,y,z) = (1,\,2,\,3)}
+```
+ 
+**Check:**
+ 
+| Equation | Left side | Right side |
+|---|---|---|
+| $x+y+z$ | $1+2+3=6$ | $6$ ✓ |
+| $2x-y+z$ | $2-2+3=3$ | $3$ ✓ |
+| $x+2y-z$ | $1+4-3=2$ | $2$ ✓ |
+ 
+All three equations hold, so the system is consistent with the unique solution $(1,2,3)$.
+ 
+---
